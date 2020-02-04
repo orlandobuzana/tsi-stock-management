@@ -6,7 +6,7 @@ import SettingsService from 'modules/settings/settingsService';
 import { i18n } from 'i18n';
 
 (async function() {
-  document.title = i18n('Binder');
+  document.title = i18n('app.title');
   await SettingsService.fetchAndApply();
 
   ReactDOM.render(<App />, document.getElementById('root'));

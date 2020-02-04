@@ -104,7 +104,23 @@ const mapAllUploadRequests = (app) => {
     }),
   );
 
+  app.post(
+        '/upload/location/licationImg',
+        request('location/licationImg', {
+          entity: 'location',
+          maxFileSize: undefined,
+          folderIncludesAuthenticationUid: false,
+        }),
+      );
 
+  app.post(
+        '/upload/product/productImg',
+        request('product/productImg', {
+          entity: 'product',
+          maxFileSize: undefined,
+          folderIncludesAuthenticationUid: false,
+        }),
+      );
 };
 
 exports.mapAllUploadRequests = mapAllUploadRequests;

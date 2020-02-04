@@ -37,8 +37,8 @@ class UserAutocompleteFormItem extends Component {
     this.doCloseModal();
   };
 
-  fetchFn = (value) => {
-    return IamService.fetchUserAutocomplete(value, 10);
+  fetchFn = (value, limit) => {
+    return IamService.fetchUserAutocomplete(value, limit);
   };
 
   mapper = {

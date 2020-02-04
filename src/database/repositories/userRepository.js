@@ -628,7 +628,7 @@ module.exports = class UserRepository {
       if (filter.createdAtRange) {
         const [start, end] = filter.createdAtRange;
 
-        if (start) {
+        if (start !== undefined && start !== null && start !== '') {
           where = {
             ...where,
             ['createdAt']: {
@@ -638,7 +638,7 @@ module.exports = class UserRepository {
           };
         }
 
-        if (end) {
+        if (end !== undefined && end !== null && end !== '') {
           where = {
             ...where,
             ['createdAt']: {
@@ -683,16 +683,16 @@ module.exports = class UserRepository {
     if (query) {
       where = {
         [Op.or]: [
-          { ['id']: SequelizeFilterUtils.uuid(query.id) },
+          { ['id']: SequelizeFilterUtils.uuid(query) },
           SequelizeFilterUtils.ilike(
             'user',
             'fullName',
-            query.fullName,
+            query,
           ),
           SequelizeFilterUtils.ilike(
             'user',
             'email',
-            query.email,
+            query,
           ),
         ],
       };

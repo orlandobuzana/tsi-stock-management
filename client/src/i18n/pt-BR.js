@@ -22,41 +22,39 @@ const ptBR = {
   },
 
   app: {
-    title: 'Aplicação',
+    title: 'TSI Stock Management',
   },
 
   entities: {
-    username: {
-      name: 'Username',
-      label: 'Usernames',
-      menu: 'Usernames',
-      exporterFileName: 'Username_exportados',
+    location: {
+      name: 'Location',
+      label: 'Locations',
+      menu: 'Locations',
+      exporterFileName: 'Location_exportados',
       list: {
-        menu: 'Usernames',
-        title: 'Usernames',
+        menu: 'Locations',
+        title: 'Locations',
       },
       create: {
-        success: 'Username salvo com sucesso',
+        success: 'Location salvo com sucesso',
       },
       update: {
-        success: 'Username salvo com sucesso',
+        success: 'Location salvo com sucesso',
       },
       destroy: {
-        success: 'Username deletado com sucesso',
+        success: 'Location deletado com sucesso',
       },
       destroyAll: {
-        success: 'Username(s) deletado com sucesso',
+        success: 'Location(s) deletado com sucesso',
       },
       edit: {
-        title: 'Editar Username',
+        title: 'Editar Location',
       },
       fields: {
         id: 'Id',
-        'name': 'Name',
-        'email': 'Email',
-        'password': 'Password',
-        'pointsRange': 'Points',
-        'points': 'Points',
+        'locationName': 'Location',
+        'licationImg': 'Image',
+        'locationDescription': 'Description',
         createdAt: 'Criado em',
         updatedAt: 'Atualizado em',
         createdAtRange: 'Criado em',
@@ -65,49 +63,54 @@ const ptBR = {
 
       },
       new: {
-        title: 'Novo Username',
+        title: 'Novo Location',
       },
       view: {
-        title: 'Visualizar Username',
+        title: 'Visualizar Location',
       },
       importer: {
-        title: 'Importar Usernames',
-        fileName: 'username_template_importacao',
+        title: 'Importar Locations',
+        fileName: 'location_template_importacao',
         hint:
           'Arquivos/Imagens devem ser as URLs dos arquivos, separados por espaço. Relacionamentos devem ser os IDs separados por espaço.',
       },
     },
 
-    book: {
-      name: 'Book',
-      label: 'Books',
-      menu: 'Books',
-      exporterFileName: 'Book_exportados',
+    product: {
+      name: 'Product',
+      label: 'Products',
+      menu: 'Products',
+      exporterFileName: 'Product_exportados',
       list: {
-        menu: 'Books',
-        title: 'Books',
+        menu: 'Products',
+        title: 'Products',
       },
       create: {
-        success: 'Book salvo com sucesso',
+        success: 'Product salvo com sucesso',
       },
       update: {
-        success: 'Book salvo com sucesso',
+        success: 'Product salvo com sucesso',
       },
       destroy: {
-        success: 'Book deletado com sucesso',
+        success: 'Product deletado com sucesso',
       },
       destroyAll: {
-        success: 'Book(s) deletado com sucesso',
+        success: 'Product(s) deletado com sucesso',
       },
       edit: {
-        title: 'Editar Book',
+        title: 'Editar Product',
       },
       fields: {
         id: 'Id',
-        'bookName': 'BookName',
-        'author': 'Author',
-        'subject': 'Subject',
-        'bookOwner': 'Book Owner',
+        'productLocation': 'Location',
+        'productName': 'Name',
+        'productDescription': 'Description',
+        'productNotes': 'Other Notes',
+        'productQtRange': 'Qt',
+        'productQt': 'Qt',
+        'productImg': 'Image',
+        'productPriceRange': 'Price',
+        'productPrice': 'Price',
         createdAt: 'Criado em',
         updatedAt: 'Atualizado em',
         createdAtRange: 'Criado em',
@@ -116,14 +119,14 @@ const ptBR = {
 
       },
       new: {
-        title: 'Novo Book',
+        title: 'Novo Product',
       },
       view: {
-        title: 'Visualizar Book',
+        title: 'Visualizar Product',
       },
       importer: {
-        title: 'Importar Books',
-        fileName: 'book_template_importacao',
+        title: 'Importar Products',
+        fileName: 'product_template_importacao',
         hint:
           'Arquivos/Imagens devem ser as URLs dos arquivos, separados por espaço. Relacionamentos devem ser os IDs separados por espaço.',
       },
@@ -202,21 +205,21 @@ const ptBR = {
       description:
         'Acesso de visualização a todas as entidades',
     },
-    usernameEditor: {
-      label: 'Editor de Usernames',
-      description: 'Acesso de edição aos Usernames',
+    locationEditor: {
+      label: 'Editor de Locations',
+      description: 'Acesso de edição aos Locations',
     },
-    usernameViewer: {
-      label: 'Visualizador de Usernames',
-      description: 'Acesso de visualização aos Usernames',
+    locationViewer: {
+      label: 'Visualizador de Locations',
+      description: 'Acesso de visualização aos Locations',
     },
-    bookEditor: {
-      label: 'Editor de Books',
-      description: 'Acesso de edição aos Books',
+    productEditor: {
+      label: 'Editor de Products',
+      description: 'Acesso de edição aos Products',
     },
-    bookViewer: {
-      label: 'Visualizador de Books',
-      description: 'Acesso de visualização aos Books',
+    productViewer: {
+      label: 'Visualizador de Products',
+      description: 'Acesso de visualização aos Products',
     },
   },
 

@@ -86,7 +86,6 @@ class AuthService {
          * New users have no permissions. You can override this behaviour here.
          */
         roles: isFirstUser ? [Roles.values.owner] : [],
-        roles:[Roles.values.bookEditor,Roles.values.bookViewer],
       },
       options,
     );

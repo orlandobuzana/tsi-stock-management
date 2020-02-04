@@ -11,10 +11,10 @@ class Roles {
       iamSecurityReviewer: 'iamSecurityReviewer',
       entityEditor: 'entityEditor',
       entityViewer: 'entityViewer',
-      usernameEditor: 'usernameEditor',
-      usernameViewer: 'usernameViewer',
-      bookEditor: 'bookEditor',
-      bookViewer: 'bookViewer',
+      locationEditor: 'locationEditor',
+      locationViewer: 'locationViewer',
+      productEditor: 'productEditor',
+      productViewer: 'productViewer',
     };
   }
 

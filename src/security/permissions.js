@@ -48,8 +48,7 @@ class Permissions {
           roles.editor,
           roles.viewer,
 
-          roles.bookEditor,
-          roles.bookViewer,
+
         ],
       },
       auditLogRead: {
@@ -60,128 +59,129 @@ class Permissions {
         id: 'settingsEdit',
         allowedRoles: [roles.owner],
       },
-      usernameImport: {
-        id: 'usernameImport',
+      locationImport: {
+        id: 'locationImport',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.usernameEditor,
+          roles.locationEditor,
         ],
       },
-      usernameCreate: {
-        id: 'usernameCreate',
+      locationCreate: {
+        id: 'locationCreate',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.usernameEditor,
+          roles.locationEditor,
         ],
-        allowedStorageFolders: ['username'],
+        allowedStorageFolders: ['location'],
       },
-      usernameEdit: {
-        id: 'usernameEdit',
+      locationEdit: {
+        id: 'locationEdit',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.usernameEditor,
+          roles.locationEditor,
         ],
-        allowedStorageFolders: ['username'],
+        allowedStorageFolders: ['location'],
       },
-      usernameDestroy: {
-        id: 'usernameDestroy',
+      locationDestroy: {
+        id: 'locationDestroy',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.usernameEditor,
+          roles.locationEditor,
         ],
-        allowedStorageFolders: ['username'],
+        allowedStorageFolders: ['location'],
       },
-      usernameRead: {
-        id: 'usernameRead',
+      locationRead: {
+        id: 'locationRead',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
-          roles.usernameEditor,
-          roles.usernameViewer,
+          roles.locationEditor,
+          roles.locationViewer,
         ],
       },
-      usernameAutocomplete: {
-        id: 'usernameAutocomplete',
+      locationAutocomplete: {
+        id: 'locationAutocomplete',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
-          roles.usernameEditor,
-          roles.usernameViewer,
+          roles.locationEditor,
+          roles.locationViewer,
+          roles.productEditor,
+          roles.productViewer,
+        ],
+      },
 
-        ],
-      },
-
-      bookImport: {
-        id: 'bookImport',
+      productImport: {
+        id: 'productImport',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.bookEditor,
+          roles.productEditor,
         ],
       },
-      bookCreate: {
-        id: 'bookCreate',
+      productCreate: {
+        id: 'productCreate',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.bookEditor,
+          roles.productEditor,
         ],
-        allowedStorageFolders: ['book'],
+        allowedStorageFolders: ['product'],
       },
-      bookEdit: {
-        id: 'bookEdit',
+      productEdit: {
+        id: 'productEdit',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.bookEditor,
+          roles.productEditor,
         ],
-        allowedStorageFolders: ['book'],
+        allowedStorageFolders: ['product'],
       },
-      bookDestroy: {
-        id: 'bookDestroy',
+      productDestroy: {
+        id: 'productDestroy',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.entityEditor,
-          roles.bookEditor,
+          roles.productEditor,
         ],
-        allowedStorageFolders: ['book'],
+        allowedStorageFolders: ['product'],
       },
-      bookRead: {
-        id: 'bookRead',
-        allowedRoles: [
-          roles.owner,
-          roles.editor,
-          roles.viewer,
-          roles.entityEditor,
-          roles.bookEditor,
-          roles.bookViewer,
-        ],
-      },
-      bookAutocomplete: {
-        id: 'bookAutocomplete',
+      productRead: {
+        id: 'productRead',
         allowedRoles: [
           roles.owner,
           roles.editor,
           roles.viewer,
           roles.entityEditor,
-          roles.bookEditor,
-          roles.bookViewer,
+          roles.productEditor,
+          roles.productViewer,
+        ],
+      },
+      productAutocomplete: {
+        id: 'productAutocomplete',
+        allowedRoles: [
+          roles.owner,
+          roles.editor,
+          roles.viewer,
+          roles.entityEditor,
+          roles.productEditor,
+          roles.productViewer,
 
         ],
       },

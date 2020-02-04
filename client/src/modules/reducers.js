@@ -4,8 +4,8 @@ import auth from 'modules/auth/authReducers';
 import iam from 'modules/iam/iamReducers';
 import auditLog from 'modules/auditLog/auditLogReducers';
 import settings from 'modules/settings/settingsReducers';
-import username from 'modules/username/usernameReducers';
-import book from 'modules/book/bookReducers';
+import location from 'modules/location/locationReducers';
+import product from 'modules/product/productReducers';
 import { combineReducers } from 'redux';
 
 export default (history) =>
@@ -16,6 +16,6 @@ export default (history) =>
     iam,
     auditLog,
     settings,
-    username,
-    book,
+    location,
+    product,
   });

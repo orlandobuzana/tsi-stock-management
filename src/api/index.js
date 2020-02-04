@@ -37,24 +37,21 @@ require('./auth')(routes);
 require('./file')(routes);
 require('./iam')(routes);
 require('./settings')(routes);
-require('./username')(routes);
-require('./book')(routes);
+require('./location')(routes);
+require('./product')(routes);
 
 // Add the routes to the /api endpoint
 app.use('/api', routes);
 
 // Exposes the build of the frontend
 // to the root / of the server
-
 const clientDir = path.join(
   __dirname,
   '../../client/build'
 );
-
 console.log("clientDir:", clientDir, fs.existsSync(clientDir));
 if (fs.existsSync(clientDir)) {
   app.use('/', express.static(clientDir));
-
   app.get('*', function(request, response) {
     response.sendFile(
       path.resolve(clientDir, 'index.html')

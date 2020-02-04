@@ -8,7 +8,13 @@ const DEFAULT_ERROR_MESSAGE = i18n(
 
 function selectErrorMessage(error) {
   if (error && error.response && error.response.data) {
-    return error.response.data;
+    const data = error.response.data;
+
+    if (data.error && data.error.message) {
+      return data.error.message;
+    }
+
+    return String(data);
   }
 
   return error.message || DEFAULT_ERROR_MESSAGE;

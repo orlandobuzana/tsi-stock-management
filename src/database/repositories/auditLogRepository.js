@@ -86,7 +86,7 @@ module.exports = class AuditLogRepository {
       if (filter.timestampRange) {
         const [start, end] = filter.timestampRange;
 
-        if (start) {
+        if (start !== undefined && start !== null && start !== '') {
           where = {
             ...where,
             ['timestamp']: {
@@ -96,7 +96,7 @@ module.exports = class AuditLogRepository {
           };
         }
 
-        if (end) {
+        if (end !== undefined && end !== null && end !== '') {
           where = {
             ...where,
             ['timestamp']: {

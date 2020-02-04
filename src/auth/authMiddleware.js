@@ -71,8 +71,8 @@ async function authenticateWithTestUserIfExists(
   next,
 ) {
   const userAutoAuthenticatedEmailForTests =
-    config.tokens &&
-    config.tokens.userAutoAuthenticatedEmailForTests;
+    config &&
+    config.userAutoAuthenticatedEmailForTests;
 
   if (!userAutoAuthenticatedEmailForTests) {
     return next();

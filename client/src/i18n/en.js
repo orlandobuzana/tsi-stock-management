@@ -22,41 +22,39 @@ const en = {
   },
 
   app: {
-    title: 'Application',
+    title: 'TSI Stock Management',
   },
 
   entities: {
-    username: {
-      name: 'username',
-      label: 'Usernames',
-      menu: 'Usernames',
-      exporterFileName: 'username_export',
+    location: {
+      name: 'location',
+      label: 'Locations',
+      menu: 'Locations',
+      exporterFileName: 'location_export',
       list: {
-        menu: 'Usernames',
-        title: 'Usernames',
+        menu: 'Locations',
+        title: 'Locations',
       },
       create: {
-        success: 'Username saved successfully',
+        success: 'Location saved successfully',
       },
       update: {
-        success: 'Username saved successfully',
+        success: 'Location saved successfully',
       },
       destroy: {
-        success: 'Username deleted successfully',
+        success: 'Location deleted successfully',
       },
       destroyAll: {
-        success: 'Username(s) deleted successfully',
+        success: 'Location(s) deleted successfully',
       },
       edit: {
-        title: 'Edit Username',
+        title: 'Edit Location',
       },
       fields: {
         id: 'Id',
-        'name': 'Name',
-        'email': 'Email',
-        'password': 'Password',
-        'pointsRange': 'Points',
-        'points': 'Points',
+        'locationName': 'Location',
+        'licationImg': 'Image',
+        'locationDescription': 'Description',
         createdAt: 'Created at',
         updatedAt: 'Updated at',
         createdAtRange: 'Created at',
@@ -65,49 +63,54 @@ const en = {
 
       },
       new: {
-        title: 'New Username',
+        title: 'New Location',
       },
       view: {
-        title: 'View Username',
+        title: 'View Location',
       },
       importer: {
-        title: 'Import Usernames',
-        fileName: 'username_import_template',
+        title: 'Import Locations',
+        fileName: 'location_import_template',
         hint:
           'Files/Images columns must be the URLs of the files separated by space.',
       },
     },
 
-    book: {
-      name: 'book',
-      label: 'Books',
-      menu: 'Books',
-      exporterFileName: 'book_export',
+    product: {
+      name: 'product',
+      label: 'Products',
+      menu: 'Products',
+      exporterFileName: 'product_export',
       list: {
-        menu: 'Books',
-        title: 'Books',
+        menu: 'Products',
+        title: 'Products',
       },
       create: {
-        success: 'Book saved successfully',
+        success: 'Product saved successfully',
       },
       update: {
-        success: 'Book saved successfully',
+        success: 'Product saved successfully',
       },
       destroy: {
-        success: 'Book deleted successfully',
+        success: 'Product deleted successfully',
       },
       destroyAll: {
-        success: 'Book(s) deleted successfully',
+        success: 'Product(s) deleted successfully',
       },
       edit: {
-        title: 'Edit Book',
+        title: 'Edit Product',
       },
       fields: {
         id: 'Id',
-        'bookName': 'BookName',
-        'author': 'Author',
-        'subject': 'Subject',
-        'bookOwner': 'Book Owner',
+        'productLocation': 'Location',
+        'productName': 'Name',
+        'productDescription': 'Description',
+        'productNotes': 'Other Notes',
+        'productQtRange': 'Qt',
+        'productQt': 'Qt',
+        'productImg': 'Image',
+        'productPriceRange': 'Price',
+        'productPrice': 'Price',
         createdAt: 'Created at',
         updatedAt: 'Updated at',
         createdAtRange: 'Created at',
@@ -116,14 +119,14 @@ const en = {
 
       },
       new: {
-        title: 'New Book',
+        title: 'New Product',
       },
       view: {
-        title: 'View Book',
+        title: 'View Product',
       },
       importer: {
-        title: 'Import Books',
-        fileName: 'book_import_template',
+        title: 'Import Products',
+        fileName: 'product_import_template',
         hint:
           'Files/Images columns must be the URLs of the files separated by space.',
       },
@@ -201,21 +204,21 @@ const en = {
       label: 'Entity Viewer',
       description: 'View access to all entities',
     },
-    usernameEditor: {
-      label: 'Username Editor',
-      description: 'Edit access to Usernames',
+    locationEditor: {
+      label: 'Location Editor',
+      description: 'Edit access to Locations',
     },
-    usernameViewer: {
-      label: 'Username Viewer',
-      description: 'View access to Usernames',
+    locationViewer: {
+      label: 'Location Viewer',
+      description: 'View access to Locations',
     },
-    bookEditor: {
-      label: 'Book Editor',
-      description: 'Edit access to Books',
+    productEditor: {
+      label: 'Product Editor',
+      description: 'Edit access to Products',
     },
-    bookViewer: {
-      label: 'Book Viewer',
-      description: 'View access to Books',
+    productViewer: {
+      label: 'Product Viewer',
+      description: 'View access to Products',
     },
   },
 
