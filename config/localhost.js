@@ -22,11 +22,11 @@ module.exports = {
    */
 
   database: {
-    username: 'b0gc385ugt8xpprr',
+    username: 'root',
     dialect: 'mysql',
-    password: 'ybjzms3yffc59y5x',
-    database: 'infoz8s22j0dn9fa',
-    host: 'l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    password: '',
+    database: 'tsiDb',
+    host: 'localhost',
     logging: console.log,
   },
 

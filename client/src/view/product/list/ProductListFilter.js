@@ -12,7 +12,7 @@ import FilterWrapper, {
 } from 'view/shared/styles/FilterWrapper';
 import FormFilterSchema from 'view/shared/form/formFilterSchema';
 import InputFormItem from 'view/shared/form/items/InputFormItem';
-import DatePickerRangeFormItem from 'view/shared/form/items/DatePickerRangeFormItem';
+//import DatePickerRangeFormItem from 'view/shared/form/items/DatePickerRangeFormItem';
 import InputRangeFormItem from 'view/shared/form/items/InputRangeFormItem';
 import InputNumberRangeFormItem from 'view/shared/form/items/InputNumberRangeFormItem';
 import LocationAutocompleteFormItem from 'view/location/autocomplete/LocationAutocompleteFormItem';

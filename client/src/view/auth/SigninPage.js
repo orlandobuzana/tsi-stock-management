@@ -1,4 +1,4 @@
-import { Button, Checkbox, Form, Avatar } from 'antd';
+import { Button, Checkbox, Form } from 'antd';
 //import logo from '../../../public/images/tsi_logo.jpg';
 import { Formik } from 'formik';
 import actions from 'modules/auth/authActions';
