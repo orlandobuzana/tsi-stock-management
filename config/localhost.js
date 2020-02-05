@@ -26,7 +26,7 @@ module.exports = {
     dialect: 'mysql',
     password: 'ybjzms3yffc59y5x',
     database: 'infoz8s22j0dn9fa',
-    host: 'l6slz53eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    host: 'l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     logging: console.log,
   },
 
