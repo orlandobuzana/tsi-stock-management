@@ -1,13 +1,13 @@
-# Binder 
+# Stock Manager 
 
 ## Concept
-Binder is a platform for students to share textbooks, notes and study material with other students. 
+By creating locations where your products will be stored, SM will also identify and create reports on what products are running low in stock. 
 
 ## Motivation
-* Rising textbook prices make it difficult for students to afford to buy textbooks.
-* Students are becoming environmentally conscious. Participating in a book exchanges saves on ink and leaves a smaller environmental footprint than printing a book.
+* New emploees would have a easier time looking for specific products.
+* Ordering new products specificly.
 
-## How we built it
+## How I built it
 We built this project using MERN Stack (MySQL, Express, React/Redux, NodeJS).
 
 ## Technology & Packages
@@ -19,7 +19,7 @@ We built this project using MERN Stack (MySQL, Express, React/Redux, NodeJS).
 * Express
 * MySQL
 * Sequelize
-* Ant Design
+* Antd Design
 * Bcrypt
 * Moment
 
@@ -28,7 +28,7 @@ We built this project using MERN Stack (MySQL, Express, React/Redux, NodeJS).
 
 ### Configuration
 * Open config/localhost.js - Set your custom configs
-* Open frontend/src/config/localhost.js - Set your custom configs
+* 
 
 ### Backend
 * On the Binder folder itself, run npm install - This should install node modules within the server and the client folder.
@@ -40,5 +40,5 @@ We built this project using MERN Stack (MySQL, Express, React/Redux, NodeJS).
 * After completing the above step, run npm start. Your app should now be running on http://localhost:3000.
 
 ## Built By
-Orlando || Ruchika || Rugiya || Sam 
+Orlando 
 
