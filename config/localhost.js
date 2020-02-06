@@ -22,6 +22,12 @@ module.exports = {
    */
 
   database: {
+    // username: 'root',
+    // dialect: 'mysql',
+    // password: '',
+    // database: 'tsiDb',
+    // host: 'localhost',
+    // logging: console.log,
     username: 'b0gc385ugt8xpprr',
     dialect: 'mysql',
     password: 'ybjzms3yffc59y5x',

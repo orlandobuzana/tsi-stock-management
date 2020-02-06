@@ -22,7 +22,7 @@ const en = {
   },
 
   app: {
-    title: 'TSI Stock Management',
+    title: 'Stock Management',
   },
 
   entities: {

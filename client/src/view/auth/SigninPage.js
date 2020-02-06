@@ -1,5 +1,5 @@
 import { Button, Checkbox, Form } from 'antd';
-//import logo from '../../../public/images/tsi_logo.jpg';
+import TsiLogo from './images/tsi_logo.png';
 import { Formik } from 'formik';
 import actions from 'modules/auth/authActions';
 import model from 'modules/auth/userModel';
@@ -64,7 +64,7 @@ class SigninPage extends Component {
       <SigninPageWrapper>
         <Content>
           <Logo>
-            <img src={'../../../public/images/tsi_logo.jpg'} alt="Logo" />;
+            <img src={TsiLogo} alt="Logo" />
             
             <h1>{i18n('app.title')}</h1>
           </Logo>
